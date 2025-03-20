@@ -13,7 +13,7 @@
     "@db-ux/react-core-components": "^1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "7.3.0"
+    "react-router-dom": "7.4.0"
   },
   "devDependencies": {
     "@db-ux/core-foundations": "^1.1.1",
