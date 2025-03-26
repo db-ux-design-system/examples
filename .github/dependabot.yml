@@ -20,6 +20,15 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: increase
+    groups:
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint*"
+          - "typescript-eslint"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
 
   - package-ecosystem: "npm"
     directory: "/react-example"
