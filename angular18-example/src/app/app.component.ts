@@ -10,5 +10,5 @@ import { DBButton } from '@db-ux/ngx-core-components';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular17-example';
+  title = 'angular18-example';
 }
