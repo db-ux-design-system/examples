@@ -20,7 +20,7 @@ jobs:
       matrix:
         example:
           [
-            angular17-example,
+            angular18-example,
             react-example,
             vue-example,
           ]
@@ -56,8 +56,8 @@ jobs:
       - name: ⬇ Download build angular
         uses: actions/download-artifact@v4
         with:
-          name: angular17-example
-          path: ./build/angular17-example
+          name: angular18-example
+          path: ./build/angular18-example
 
       - name: ⬇ Download build react
         uses: actions/download-artifact@v4

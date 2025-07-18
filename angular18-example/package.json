@@ -1,10 +1,10 @@
 {
-  "name": "angular17-example",
+  "name": "angular18-example",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /angular17-example/",
+    "build": "ng build --base-href /angular18-example/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "postbuild": "node ./post-build.js"
