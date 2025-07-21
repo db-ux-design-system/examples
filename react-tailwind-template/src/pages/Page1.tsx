@@ -4,8 +4,8 @@ const Page1 = () => {
   return (
     <div
       className="p-fix-xl" // TODO: Change my padding; https://design-system.deutschebahn.com/core-web/review/main/foundations/variables/examples
-      data-container-color="neutral" // TODO: Change my color; https://design-system.deutschebahn.com/core-web/review/main/foundations/colors/color-classes
-      data-bg-color="basic-level-2" // TODO: Change my color; https://design-system.deutschebahn.com/core-web/review/main/foundations/colors/color-classes
+      data-color="neutral" // TODO: Change my color; https://design-system.deutschebahn.com/core-web/review/main/foundations/colors/color-schemes
+      data-bg-color="basic-level-1" // TODO: Change my color; https://design-system.deutschebahn.com/core-web/review/main/foundations/colors/color-schemes#:~:text=2.%20Background%20color%20modifier
       data-density="functional" // TODO: Change my density; https://design-system.deutschebahn.com/core-web/review/main/foundations/densities/examples
     >
       <DBCard className="gap-fix-md">
