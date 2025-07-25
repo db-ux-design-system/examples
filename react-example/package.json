@@ -8,7 +8,7 @@
     "dev": "vite --open"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "^3.0.1",
+    "@db-ux/react-core-components": "^3.0.2",
     "classnames": "^2.5.1",
     "react": "^18.3.0",
     "react-dom": "^18.3.1",
@@ -19,6 +19,6 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.7.0",
     "typescript": "^5.8.3",
-    "vite": "^7.0.5"
+    "vite": "^7.0.6"
   }
 }
