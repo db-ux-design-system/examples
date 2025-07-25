@@ -1,5 +1,8 @@
 # Vue Example
 
+> [!IMPORTANT]
+> Please keep in mind, that we do not include the [`@db-ux/db-theme`](https://npmjs.com/@db-ux/db-theme) so you won't have the examples displayed with the DB font and only have a small stack of icons available.
+
 1. init new vite project `npm create vite@latest vue-example`
 2. `cd vue-example`
 3. `npm i sass`
