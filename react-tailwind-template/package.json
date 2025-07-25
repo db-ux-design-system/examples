@@ -11,11 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "^3.0.1",
+    "@db-ux/react-core-components": "^3.0.2",
     "@tailwindcss/vite": "^4.1.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "7.7.0"
+    "react-router-dom": "7.7.1"
   },
   "devDependencies": {
     "@db-ux/core-foundations": "^3.0.0",
@@ -29,6 +29,6 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
-    "vite": "^7.0.5"
+    "vite": "^7.0.6"
   }
 }
