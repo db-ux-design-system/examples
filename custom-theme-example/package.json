@@ -1,5 +1,5 @@
 {
-  "name": "react-tailwind-template",
+  "name": "custom-theme-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,9 @@
     "format": "prettier . --write",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "agent": "agent-cli"
+    "agent": "agent-cli",
+    "clean:icons": "npx @db-ux/icon-font-tools clean-icons --src ./public/assets/uncleaned-icons --out ./public/assets/icons",
+    "generate:icon-font": "npx @db-ux/icon-font-tools generate-icon-fonts --src ./public/assets/icons --fontName thiemens"
   },
   "dependencies": {
     "@db-ux/react-core-components": "3.0.2-copilot2-e7bf98b",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@db-ux/agent-cli": "3.0.2-copilot2-e7bf98b",
     "@db-ux/core-foundations": "3.0.2-copilot2-e7bf98b",
+    "@db-ux/icon-font-tools": "0.3.4",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
