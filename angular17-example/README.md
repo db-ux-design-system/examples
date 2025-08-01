@@ -1,5 +1,8 @@
 # Angular example
 
+> [!IMPORTANT]
+> Please keep in mind, that we do not include the [`@db-ux/db-theme`](https://npmjs.com/@db-ux/db-theme) so you won't have the examples displayed with the DB font and only have a small stack of icons available.
+
 > **Note:** This was tested with Angular 17 this setup may change with other versions
 
 1. init new angular project `ng new angular-example`
