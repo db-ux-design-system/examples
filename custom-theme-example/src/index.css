@@ -1,0 +1,7 @@
+@layer theme, base, components, db-ux, utilities, thiemens;
+
+@import "tailwindcss";
+@import "@db-ux/core-foundations/build/tailwind/theme/index.css";
+@import "@db-ux/core-components/build/styles/rollup.css" layer(db-ux);
+@import "./thiemens-properties.css" layer(thiemens);
+@import "./thiemens-icons.css" layer(thiemens);

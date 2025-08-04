@@ -1,9 +1,5 @@
-@import "@db-ux/core-components/build/styles/rollup.css";
+@layer theme, base, components, db-ux, utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:is(h1, h2, h3, h4, h5, h6, p) {
-  margin: 0;
-}
+@import "tailwindcss";
+@import "@db-ux/core-foundations/build/tailwind/theme/index.css";
+@import "@db-ux/core-components/build/styles/rollup.css" layer(db-ux);
