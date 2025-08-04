@@ -1,0 +1,24 @@
+@font-face {
+  font-display: block;
+  font-family: "thiemens";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/icons/fonts/default/thiemens.woff2") format("woff2");
+}
+
+@property --db-icon-default-font-family {
+  syntax: "*";
+  initial-value: "thiemens";
+  inherits: false;
+}
+@property --db-icon-filled-font-family {
+  syntax: "*";
+  initial-value: "thiemens";
+  inherits: false;
+}
+
+.db-brand {
+  &::before {
+    inline-size: fit-content;
+  }
+}
