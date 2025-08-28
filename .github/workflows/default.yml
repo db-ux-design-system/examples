@@ -26,7 +26,7 @@ jobs:
           ]
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
@@ -51,7 +51,7 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.50.1
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: ⬇ Download build angular
         uses: actions/download-artifact@v5
