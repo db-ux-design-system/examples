@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular18-example": {
+    "angular-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular18-example:build:production"
+              "buildTarget": "angular-example:build:production"
             },
             "development": {
-              "buildTarget": "angular18-example:build:development"
+              "buildTarget": "angular-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "angular18-example:build"
+            "buildTarget": "angular-example:build"
           }
         }
       }
