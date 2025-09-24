@@ -3,5 +3,5 @@ import { test } from "@playwright/test";
 import { getDefaultScreenshotTest } from "./default.ts";
 
 test.describe("Angular Example", () => {
-  getDefaultScreenshotTest("angular18-example");
+  getDefaultScreenshotTest("angular-example");
 });
