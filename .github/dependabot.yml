@@ -30,9 +30,9 @@ updates:
         patterns:
           - "@typescript-eslint*"
           - "typescript-eslint"
-        update-types:
-          - "major"
-          - "minor"
+      angular:
+        patterns:
+          - "@angular*"
 
   - package-ecosystem: "npm"
     directory: "/react-example"
