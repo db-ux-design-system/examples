@@ -24,6 +24,8 @@ updates:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
       typescript-eslint:
         patterns:
           - "@typescript-eslint*"
@@ -46,6 +48,8 @@ updates:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     directory: "/react-tailwind-template"
@@ -61,6 +65,8 @@ updates:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     directory: "/vue-example"
@@ -76,3 +82,5 @@ updates:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
