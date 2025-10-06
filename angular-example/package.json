@@ -21,7 +21,7 @@
     "@angular/router": "^19.2.15",
     "@db-ux/ngx-core-components": "^3.1.17",
     "rxjs": "~7.8.2",
-    "tslib": "^2.3.0",
+    "tslib": "^2.8.1",
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "@angular/cli": "^19.2.17",
     "@angular/compiler-cli": "^19.2.15",
     "@types/jasmine": "~5.1.9",
-    "fs-extra": "11.2.0",
+    "fs-extra": "11.3.2",
     "jasmine-core": "~5.11.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
