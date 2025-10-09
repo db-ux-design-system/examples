@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {DBButton, DBCustomSelect} from '@db-ux/ngx-core-components';
+import { DBButton } from '@db-ux/ngx-core-components';
 
 @Component({
   selector: 'app-root',
-  imports: [DBButton, DBCustomSelect],
+  imports: [DBButton],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
