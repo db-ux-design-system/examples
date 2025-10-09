@@ -16,7 +16,7 @@ jobs:
     name: Build example
     runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         example:
           [
