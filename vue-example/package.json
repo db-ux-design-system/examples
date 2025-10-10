@@ -9,6 +9,8 @@
     "agent": "agent-cli"
   },
   "dependencies": {
+    "@db-ux/core-foundations": "3.1.18",
+    "@db-ux/core-components": "3.1.18",
     "@db-ux/v-core-components": "3.1.18",
     "sass": "^1.93.2",
     "vue": "^3.5.22"
