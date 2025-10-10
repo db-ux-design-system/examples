@@ -1,3 +1,11 @@
+## Angular
+
+- For Angular always write HTML, CSS and TS into one file
+- Always use `standalone` components for Angular
+- Always use `@if`, `@for` instead of `*ngIf`, `*ngFor`
+- Always use DB UX for CSS variables
+- Don't inline `style` use the `styles` property from `@Component`
+- Don't use `px` values for styling use `variables` instead
 
 --- START: DB UX Copilot Instructions – do not edit below ---
 
