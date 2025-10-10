@@ -1,3 +1,6 @@
+# Vue
+
+- Use ``SCSS`` for new components
 
 --- START: DB UX Copilot Instructions – do not edit below ---
 
