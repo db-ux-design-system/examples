@@ -9,7 +9,7 @@
     "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-foundations": "3.1.20",
+    "@db-ux/core-foundations": "4.0.1",
     "@db-ux/core-components": "3.1.20",
     "@db-ux/react-core-components": "3.1.20",
     "classnames": "^2.5.1",
