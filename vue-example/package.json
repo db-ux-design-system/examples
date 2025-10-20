@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@db-ux/core-foundations": "3.1.20",
-    "@db-ux/core-components": "3.1.20",
+    "@db-ux/core-components": "4.0.1",
     "@db-ux/v-core-components": "3.1.20",
     "sass": "^1.93.2",
     "vue": "^3.5.22"
