@@ -12,7 +12,7 @@
     "agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "3.1.20",
+    "@db-ux/react-core-components": "4.0.1",
     "@db-ux/core-foundations": "3.1.20",
     "@db-ux/core-components": "3.1.20",
     "@tailwindcss/vite": "^4.1.14",
