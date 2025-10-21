@@ -14,7 +14,7 @@
   "dependencies": {
     "@db-ux/react-core-components": "3.1.20",
     "@db-ux/core-foundations": "3.1.20",
-    "@db-ux/core-components": "3.1.20",
+    "@db-ux/core-components": "4.0.1",
     "@tailwindcss/vite": "^4.1.14",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
