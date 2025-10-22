@@ -9,6 +9,8 @@ updates:
       timezone: "Europe/Berlin"
     pull-request-branch-name:
       separator: "-"
+    cooldown:
+      default-days: 3
 
   - package-ecosystem: "npm"
     directory: "/angular-example"
@@ -20,17 +22,24 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: increase
+    cooldown:
+      default-days: 3
     groups:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
       typescript-eslint:
         patterns:
           - "@typescript-eslint*"
           - "typescript-eslint"
-        update-types:
-          - "major"
-          - "minor"
+      angular:
+        patterns:
+          - "@angular*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/react-example"
@@ -42,10 +51,17 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: increase
+    cooldown:
+      default-days: 3
     groups:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/react-tailwind-template"
@@ -57,10 +73,17 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: increase
+    cooldown:
+      default-days: 3
     groups:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/vue-example"
@@ -72,7 +95,14 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: increase
+    cooldown:
+      default-days: 3
     groups:
       patch-dependencies:
         update-types:
           - "patch"
+        patterns:
+          - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"

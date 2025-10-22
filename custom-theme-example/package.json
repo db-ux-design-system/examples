@@ -11,18 +11,19 @@
     "preview": "vite preview",
     "agent": "agent-cli",
     "clean:icons": "npx @db-ux/icon-font-tools clean-icons --src ./public/assets/uncleaned-icons --out ./public/assets/icons",
-    "generate:icon-font": "npx @db-ux/icon-font-tools generate-icon-fonts --src ./public/assets/icons --fontName thiemens"
+    "generate:icon-font": "npx @db-ux/icon-font-tools generate-icon-fonts --src ./public/assets/icons --fontName thiemens",
+    "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "3.0.2-copilot2-e7bf98b",
+    "@db-ux/react-core-components": "3.1.18",
     "@tailwindcss/vite": "^4.1.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "7.7.1"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "3.0.2-copilot2-e7bf98b",
-    "@db-ux/core-foundations": "3.0.2-copilot2-e7bf98b",
+    "@db-ux/agent-cli": "3.1.18",
+    "@db-ux/core-foundations": "3.1.18",
     "@db-ux/icon-font-tools": "0.3.4",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

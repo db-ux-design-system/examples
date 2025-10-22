@@ -16,7 +16,7 @@ jobs:
     name: Build example
     runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         example:
           [
@@ -27,6 +27,11 @@ jobs:
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
+  
+      - name: 🆙 Setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
