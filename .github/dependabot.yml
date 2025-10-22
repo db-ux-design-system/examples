@@ -37,6 +37,9 @@ updates:
       angular:
         patterns:
           - "@angular*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/react-example"
@@ -56,6 +59,9 @@ updates:
           - "patch"
         patterns:
           - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/react-tailwind-template"
@@ -75,6 +81,9 @@ updates:
           - "patch"
         patterns:
           - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
 
   - package-ecosystem: "npm"
     directory: "/vue-example"
@@ -94,3 +103,6 @@ updates:
           - "patch"
         patterns:
           - "*"
+      db-ux:
+        patterns:
+          - "@db-ux*"
