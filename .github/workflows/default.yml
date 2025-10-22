@@ -26,7 +26,7 @@ jobs:
           ]
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
   
       - name: 🆙 Setup node
         uses: actions/setup-node@v6
@@ -56,7 +56,7 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.50.1
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: ⬇ Download build angular
         uses: actions/download-artifact@v5
