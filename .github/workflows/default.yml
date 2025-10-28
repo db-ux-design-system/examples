@@ -59,19 +59,19 @@ jobs:
         uses: actions/checkout@v5
 
       - name: ⬇ Download build angular
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: angular-example
           path: ./build/angular-example
 
       - name: ⬇ Download build react
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: react-example
           path: ./build/react-example
 
       - name: ⬇ Download build vue
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: vue-example
           path: ./build/vue-example
