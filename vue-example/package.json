@@ -12,7 +12,7 @@
     "@db-ux/core-foundations": "4.1.0",
     "@db-ux/core-components": "4.1.0",
     "@db-ux/v-core-components": "4.1.0",
-    "sass": "^1.93.2",
+    "sass": "^1.93.3",
     "vue": "^3.5.22"
   },
   "devDependencies": {
