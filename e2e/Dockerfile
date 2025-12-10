@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.32.3-focal as playwright
+FROM mcr.microsoft.com/playwright:v1.50.1 as playwright
 
 COPY e2e /e2e
 COPY build/ build/

@@ -1,0 +1,6 @@
+{
+  "title": "DB UX Design System - React 18 + tailwind example",
+  "description": "This is an example of using the DB UX Design System with React 18 and tailwind.",
+  "tags": ["react", "tailwind", "typescript", "vite"],
+  "published": true
+}

@@ -14,20 +14,24 @@ concurrency:
 jobs:
   build-examples:
     name: Build example
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         example:
           [
-            angular17-example,
+            angular-example,
             react-example,
-            react-tailwind-example,
             vue-example,
           ]
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+  
+      - name: 🆙 Setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
@@ -39,41 +43,35 @@ jobs:
         run: npm run build
 
       - name: ⬆ Upload build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ matrix.example }}
           path: ./build/${{ matrix.example }}
 
   test-examples:
     name: 🧪 with 🎭
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     needs: [build-examples]
     container:
-      image: mcr.microsoft.com/playwright:v1.32.3-focal
+      image: mcr.microsoft.com/playwright:v1.50.1
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: ⬇ Download build angular
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
-          name: angular17-example
-          path: ./build/angular17-example
+          name: angular-example
+          path: ./build/angular-example
 
       - name: ⬇ Download build react
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: react-example
           path: ./build/react-example
 
-      - name: ⬇ Download build react-tailwind
-        uses: actions/download-artifact@v4
-        with:
-          name: react-tailwind-example
-          path: ./build/react-tailwind-example
-
       - name: ⬇ Download build vue
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: vue-example
           path: ./build/vue-example
@@ -96,7 +94,7 @@ jobs:
 
       - name: 🆙 Upload playwright-report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: playwright-report
           path: ./e2e/playwright-report
@@ -104,7 +102,7 @@ jobs:
 
       - name: 🆙 Upload test results
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: playwright-results
           path: ./e2e/test-results
