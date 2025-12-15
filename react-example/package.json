@@ -13,16 +13,16 @@
     "@db-ux/core-components": "4.2.3",
     "@db-ux/react-core-components": "4.2.3",
     "classnames": "^2.5.1",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "sass": "^1.94.2"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.2.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^5.1.2",
     "typescript": "^5.9.3",
-    "vite": "^7.2.6"
+    "vite": "^7.2.7"
   }
 }
