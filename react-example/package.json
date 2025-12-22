@@ -15,7 +15,7 @@
     "classnames": "^2.5.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "sass": "^1.96.0"
+    "sass": "^1.97.0"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.2.5",
