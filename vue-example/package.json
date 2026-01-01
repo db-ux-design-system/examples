@@ -9,17 +9,17 @@
     "agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-foundations": "4.2.4",
-    "@db-ux/core-components": "4.2.4",
-    "@db-ux/v-core-components": "4.2.4",
-    "sass": "^1.96.0",
-    "vue": "^3.5.25"
+    "@db-ux/core-foundations": "4.2.5",
+    "@db-ux/core-components": "4.2.5",
+    "@db-ux/v-core-components": "4.2.5",
+    "sass": "^1.97.1",
+    "vue": "^3.5.26"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.2.4",
+    "@db-ux/agent-cli": "4.2.5",
     "@vitejs/plugin-vue": "^6.0.3",
     "typescript": "^5.9.3",
-    "vite": "^7.2.7",
-    "vue-tsc": "^3.1.8"
+    "vite": "^7.3.0",
+    "vue-tsc": "^3.2.1"
   }
 }
