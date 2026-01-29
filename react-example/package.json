@@ -15,11 +15,11 @@
     "classnames": "^2.5.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "sass": "^1.97.2"
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.2.6",
-    "@types/react": "^19.2.8",
+    "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "typescript": "^5.9.3",
