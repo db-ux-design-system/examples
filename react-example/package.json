@@ -13,8 +13,8 @@
     "@db-ux/core-components": "4.3.2",
     "@db-ux/react-core-components": "4.3.2",
     "classnames": "^2.5.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "sass": "^1.97.3"
   },
   "devDependencies": {
