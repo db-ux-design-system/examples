@@ -10,7 +10,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "3.0.2-shell4-bdb351c",
+    "@db-ux/react-core-components": "4.4.2",
     "@tanstack/react-router": "^1.130.2",
     "@tanstack/react-router-devtools": "^1.130.2",
     "@tanstack/router-plugin": "^1.121.2",
