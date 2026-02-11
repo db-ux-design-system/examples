@@ -9,16 +9,16 @@
     "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-foundations": "4.4.1",
-    "@db-ux/core-components": "4.4.1",
-    "@db-ux/react-core-components": "4.4.1",
+    "@db-ux/core-foundations": "4.4.2",
+    "@db-ux/core-components": "4.4.2",
+    "@db-ux/react-core-components": "4.4.2",
     "classnames": "^2.5.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "sass": "^1.97.3"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.4.1",
+    "@db-ux/agent-cli": "4.4.2",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.3",
