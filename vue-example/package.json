@@ -12,14 +12,18 @@
     "@db-ux/core-foundations": "4.4.2",
     "@db-ux/core-components": "4.4.2",
     "@db-ux/v-core-components": "4.4.2",
-    "sass": "^1.97.3",
-    "vue": "^3.5.28"
+    "sass": "1.97.3",
+    "vue": "3.5.28"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.4.2",
-    "@vitejs/plugin-vue": "^6.0.4",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.1",
-    "vue-tsc": "^3.2.4"
+    "@db-ux/core-eslint-plugin": "4.4.2-eslint-plugin2-696cb23",
+    "@typescript-eslint/parser": "8.55.0",
+    "@vitejs/plugin-vue": "6.0.4",
+    "eslint": "9.39.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vue-eslint-parser": "9.4.3",
+    "vue-tsc": "3.2.4"
   }
 }

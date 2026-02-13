@@ -28,11 +28,14 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.4.2",
+    "@angular-eslint/template-parser": "^20.3.0",
     "@angular/build": "^20.3.10",
     "@angular/cli": "^20.3.10",
     "@angular/compiler-cli": "^20.3.12",
+    "@db-ux/agent-cli": "4.4.2",
+    "@db-ux/core-eslint-plugin": "4.4.2-eslint-plugin2-696cb23",
     "@types/jasmine": "~5.1.13",
+    "eslint": "9.39.2",
     "fs-extra": "11.3.3",
     "jasmine-core": "~5.13.0",
     "karma": "~6.4.4",

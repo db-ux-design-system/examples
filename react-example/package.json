@@ -9,8 +9,8 @@
     "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-foundations": "4.4.2",
     "@db-ux/core-components": "4.4.2",
+    "@db-ux/core-foundations": "4.4.2",
     "@db-ux/react-core-components": "4.4.2",
     "classnames": "^2.5.1",
     "react": "^19.2.4",
@@ -18,10 +18,13 @@
     "sass": "^1.97.3"
   },
   "devDependencies": {
+    "@db-ux/core-eslint-plugin": "4.4.2-eslint-plugin2-696cb23",
     "@db-ux/agent-cli": "4.4.2",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/parser": "^8.55.0",
     "@vitejs/plugin-react": "^5.1.3",
+    "eslint": "9.39.2",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
   }
