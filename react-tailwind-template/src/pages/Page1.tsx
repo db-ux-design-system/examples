@@ -12,13 +12,13 @@ const Page1 = () => {
         <h1>Example</h1>
         <p>Default font-size</p>
         <p data-font-size="sm">Smaller font-size</p>
-        <div className="flex gap-fix-md flex-wrap">
+        <div className="flex flex-wrap gap-fix-md">
           {/* TODO: Change my icon; https://design-system.deutschebahn.com/core-web/review/main/foundations/icons/overview */}
           <DBButton icon="plus">Button 1</DBButton>
           <DBButton>Button 2</DBButton>
           <DBButton>Button 3</DBButton>
         </div>
-        <div className="flex gap-fix-md flex-wrap">
+        <div className="flex flex-wrap gap-fix-md">
           <DBLink
             href="https://design-system.deutschebahn.com/core-web/review/main/foundations/colors/color-classes"
             content="external"
