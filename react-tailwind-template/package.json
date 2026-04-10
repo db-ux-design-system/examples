@@ -4,23 +4,27 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npx cap sync",
     "dev": "vite",
     "format": "prettier . --write",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "agent": "agent-cli"
+    "agent": "agent-cli",
+    "sync:android": "npx cap sync"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "4.5.4",
-    "@db-ux/core-foundations": "4.5.4",
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/core": "^8.3.0",
     "@db-ux/core-components": "4.5.4",
+    "@db-ux/core-foundations": "4.5.4",
+    "@db-ux/react-core-components": "4.5.4",
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "7.14.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.3.0",
     "@db-ux/agent-cli": "4.5.4",
     "@db-ux/core-foundations": "4.5.4",
     "@types/react": "^19.2.14",
