@@ -18,14 +18,14 @@
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-router-dom": "7.14.0"
+    "react-router-dom": "7.14.1"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.6.0",
     "@db-ux/core-foundations": "4.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.58.1",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
     "@typescript-eslint/parser": "^8.58.0",
     "@vitejs/plugin-react": "^5.1.4",
     "eslint": "^9.39.2",
