@@ -12,17 +12,17 @@
     "agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "4.6.0",
-    "@db-ux/core-foundations": "4.6.0",
-    "@db-ux/core-components": "4.6.0",
+    "@db-ux/react-core-components": "4.6.1",
+    "@db-ux/core-foundations": "4.6.1",
+    "@db-ux/core-components": "4.6.1",
     "@tailwindcss/vite": "^4.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "7.14.2"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.6.0",
-    "@db-ux/core-foundations": "4.6.0",
+    "@db-ux/agent-cli": "4.6.1",
+    "@db-ux/core-foundations": "4.6.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.59.0",
