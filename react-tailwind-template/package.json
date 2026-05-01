@@ -25,7 +25,7 @@
     "@db-ux/core-foundations": "4.6.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
     "@typescript-eslint/parser": "^8.59.0",
     "@vitejs/plugin-react": "^5.1.4",
     "eslint": "^9.39.2",
