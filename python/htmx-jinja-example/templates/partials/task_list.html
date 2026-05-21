@@ -1,0 +1,7 @@
+{% from "macros.html" import task_card %}
+{% for task in tasks %}
+    {{ task_card(task) }}
+{% endfor %}
+{% if not tasks %}
+    <db-notification semantic="informational">No tasks yet.</db-notification>
+{% endif %}
