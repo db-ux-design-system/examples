@@ -23,7 +23,7 @@
   "devDependencies": {
     "@db-ux/agent-cli": "4.8.0",
     "@db-ux/core-foundations": "4.8.0",
-    "@types/react": "^19.2.14",
+    "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.0",
