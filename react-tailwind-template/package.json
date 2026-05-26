@@ -12,20 +12,20 @@
     "agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "4.8.0",
-    "@db-ux/core-foundations": "4.8.0",
-    "@db-ux/core-components": "4.8.0",
+    "@db-ux/react-core-components": "4.9.1",
+    "@db-ux/core-foundations": "4.9.1",
+    "@db-ux/core-components": "4.9.1",
     "@tailwindcss/vite": "^4.3.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "7.15.1"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.8.0",
-    "@db-ux/core-foundations": "4.8.0",
-    "@types/react": "^19.2.14",
+    "@db-ux/agent-cli": "4.9.1",
+    "@db-ux/core-foundations": "4.9.1",
+    "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.0",
     "@vitejs/plugin-react": "^5.1.4",
     "eslint": "^9.39.2",
