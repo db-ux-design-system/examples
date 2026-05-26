@@ -1,0 +1,14 @@
+{% macro task_card(task) %}
+<db-card style="display:flex; align-items:center; gap:var(--db-spacing-fixed-sm)">
+    {% if task.done %}
+        <db-tag semantic="successful">Done</db-tag>
+    {% else %}
+        <db-tag semantic="warning">Open</db-tag>
+    {% endif %}
+    <span style="flex:1">{{ task.title }}</span>
+    <db-button variant="ghost" size="small"
+               hx-post="/toggle/{{ task.id }}" hx-target="#task-list" hx-swap="innerHTML">
+        {% if task.done %}Undo{% else %}Complete{% endif %}
+    </db-button>
+</db-card>
+{% endmacro %}
