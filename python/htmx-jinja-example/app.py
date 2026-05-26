@@ -2,7 +2,9 @@ from flask import Flask, render_template, send_from_directory, request
 import os
 
 app = Flask(__name__)
+app.debug = os.environ.get("FLASK_DEBUG", "true").lower() == "true"
 
+# demo-only: in-memory state, not safe for concurrent use or production
 tasks = [
     {"id": 1, "title": "Setup project", "done": True},
     {"id": 2, "title": "Add components", "done": False},
@@ -12,6 +14,9 @@ tasks = [
 
 @app.route("/node_modules/<path:filename>")
 def node_modules(filename):
+    # serve node_modules only in development
+    if not app.debug:
+        return "Not found", 404
     return send_from_directory(os.path.join(app.root_path, "node_modules"), filename)
 
 
@@ -25,6 +30,7 @@ def toggle_task(task_id):
     for task in tasks:
         if task["id"] == task_id:
             task["done"] = not task["done"]
+            break
     return render_template("partials/task_list.html", tasks=tasks)
 
 
@@ -37,4 +43,4 @@ def add_task():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=app.debug)
