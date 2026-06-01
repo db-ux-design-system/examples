@@ -18,7 +18,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "react-router-dom": "7.15.1"
+    "react-router-dom": "7.16.0"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.9.1",
