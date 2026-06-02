@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-    "@db-ux/wc-core-components": "4.9.0-stencil-bundle-ad37ca4",
+    "@db-ux/wc-core-components": "4.10.0",
     "htmx.org": "^2"
   }
 }

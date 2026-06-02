@@ -6,6 +6,7 @@ export default defineConfig({
 	base: `/react-example`,
 	plugins: [react()],
 	build: {
-		outDir: "../build/react-example"
+		outDir: "../build/react-example",
+		cssMinify: "esbuild"
 	}
 });

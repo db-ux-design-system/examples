@@ -1,5 +1,2 @@
-@layer theme, base, components, db-ux, utilities;
-
 @import "tailwindcss";
-@import "@db-ux/core-foundations/build/tailwind/theme/index.css";
-@import "@db-ux/core-components/build/styles/rollup.css" layer(db-ux);
+@import "@db-ux/core-vite-plugin/index.css";
