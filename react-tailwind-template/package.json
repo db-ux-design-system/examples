@@ -24,7 +24,7 @@
     "@db-ux/agent-cli": "4.10.1",
     "@db-ux/core-foundations": "4.10.1",
     "@db-ux/core-vite-plugin": "4.10.1",
-    "@types/react": "^19.2.16",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.60.1",
     "@typescript-eslint/parser": "^8.59.0",
