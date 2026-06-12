@@ -10,16 +10,16 @@
     "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-components": "4.10.1",
-    "@db-ux/core-foundations": "4.10.1",
-    "@db-ux/react-core-components": "4.10.1",
+    "@db-ux/core-components": "4.10.2",
+    "@db-ux/core-foundations": "4.10.2",
+    "@db-ux/react-core-components": "4.10.2",
     "classnames": "^2.5.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "sass": "^1.100.0"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.10.1",
+    "@db-ux/agent-cli": "4.10.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/jest": "^30.0.0",
