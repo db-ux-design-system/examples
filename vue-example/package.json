@@ -13,12 +13,12 @@
     "@db-ux/core-components": "4.10.2",
     "@db-ux/v-core-components": "4.10.2",
     "sass": "^1.100.0",
-    "vue": "^3.5.35"
+    "vue": "^3.5.38"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.10.2",
     "@vitejs/plugin-vue": "^6.0.7",
-    "esbuild": "^0.28.0",
+    "esbuild": "^0.28.1",
     "typescript": "^5.9.3",
     "vite": "^8.0.16",
     "vue-tsc": "^3.3.4"
