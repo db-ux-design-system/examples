@@ -10,26 +10,26 @@
     "update:agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/core-components": "4.10.1",
-    "@db-ux/core-foundations": "4.10.1",
-    "@db-ux/react-core-components": "4.10.1",
+    "@db-ux/core-components": "4.11.0",
+    "@db-ux/core-foundations": "4.11.0",
+    "@db-ux/react-core-components": "4.11.0",
     "classnames": "^2.5.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "sass": "^1.100.0"
+    "sass": "^1.101.0"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.10.1",
+    "@db-ux/agent-cli": "4.11.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
-    "esbuild": "^0.28.0",
+    "esbuild": "^0.28.1",
     "jsdom": "^29.1.1",
     "typescript": "^5.9.3",
     "vite": "^8.0.16",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.9"
   }
 }
