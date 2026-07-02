@@ -6,6 +6,7 @@ export default defineConfig({
 	base: `/vue-example`,
 	plugins: [vue()],
 	build: {
-		outDir: "../build/vue-example"
+		outDir: "../build/vue-example",
+		cssMinify: "esbuild"
 	}
 });

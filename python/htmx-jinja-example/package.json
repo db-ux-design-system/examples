@@ -1,0 +1,9 @@
+{
+  "name": "htmx-jinja-example",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@db-ux/wc-core-components": "4.10.0",
+    "htmx.org": "^2"
+  }
+}

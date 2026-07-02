@@ -1,5 +1,8 @@
+@forward "@db-ux/core-foundations/build/styles/theme/rollup.css";
+
 // Combined dependencies like variables, colors and tonality and all components
 @forward "@db-ux/core-components/build/styles/rollup";
+
 // We use $db-spacing-fixed-md variable so we need to import the file where the variable is defined
 @use "@db-ux/core-foundations/build/styles/variables";
 
