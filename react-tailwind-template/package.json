@@ -15,7 +15,7 @@
     "@db-ux/react-core-components": "4.14.0",
     "@db-ux/core-foundations": "4.14.0",
     "@db-ux/core-components": "4.14.0",
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "7.18.1"
@@ -35,6 +35,6 @@
     "eslint-plugin-react-refresh": "^0.5.3",
     "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3",
-    "vite": "^8.1.4"
+    "vite": "^8.1.5"
   }
 }
