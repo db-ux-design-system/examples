@@ -106,3 +106,6 @@ updates:
       db-ux:
         patterns:
           - "@db-ux*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
