@@ -30,7 +30,7 @@
     "@typescript-eslint/parser": "^8.67.0",
     "@vitejs/plugin-react": "^5.2.0",
     "esbuild": "^0.28.2",
-    "eslint": "^9.39.2",
+    "eslint": "^10.9.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.5",
     "tailwindcss": "^4.2.0",
