@@ -12,18 +12,18 @@
     "agent": "agent-cli"
   },
   "dependencies": {
-    "@db-ux/react-core-components": "4.14.0",
-    "@db-ux/core-foundations": "4.14.0",
-    "@db-ux/core-components": "4.14.0",
+    "@db-ux/react-core-components": "5.2.0",
+    "@db-ux/core-foundations": "5.2.0",
+    "@db-ux/core-components": "5.2.0",
     "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "7.18.3"
   },
   "devDependencies": {
-    "@db-ux/agent-cli": "4.14.0",
-    "@db-ux/core-foundations": "4.14.0",
-    "@db-ux/core-vite-plugin": "4.14.0",
+    "@db-ux/agent-cli": "5.2.0",
+    "@db-ux/core-foundations": "5.2.0",
+    "@db-ux/core-vite-plugin": "5.2.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "@typescript-eslint/eslint-plugin": "^8.69.0",
