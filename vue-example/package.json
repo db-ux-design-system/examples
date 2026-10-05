@@ -12,7 +12,7 @@
     "@db-ux/core-foundations": "4.14.0",
     "@db-ux/core-components": "4.14.0",
     "@db-ux/v-core-components": "4.14.0",
-    "sass": "^1.105.0",
+    "sass": "^1.105.1",
     "vue": "^3.5.43"
   },
   "devDependencies": {
@@ -20,7 +20,7 @@
     "@vitejs/plugin-vue": "^6.0.9",
     "esbuild": "^0.28.2",
     "typescript": "^5.9.3",
-    "vite": "^8.3.1",
+    "vite": "^8.3.2",
     "vue-tsc": "^3.3.11"
   }
 }
