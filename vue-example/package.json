@@ -12,8 +12,8 @@
     "@db-ux/core-foundations": "4.14.0",
     "@db-ux/core-components": "4.14.0",
     "@db-ux/v-core-components": "4.14.0",
-    "sass": "^1.105.1",
-    "vue": "^3.5.43"
+    "sass": "^1.105.2",
+    "vue": "^3.5.44"
   },
   "devDependencies": {
     "@db-ux/agent-cli": "4.14.0",
