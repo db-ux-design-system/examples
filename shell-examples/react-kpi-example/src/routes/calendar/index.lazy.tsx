@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { CALENDAR_PATH } from "@/routes/__navigation.tsx";
 import { DBCard, DBSection, DBStack } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(CALENDAR_PATH)({
+export const Route = createLazyFileRoute("/calendar/")({
   component: () => (
     <DBSection width="medium">
       <h1>Calendar</h1>

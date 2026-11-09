@@ -11,24 +11,24 @@
   },
   "dependencies": {
     "@db-ux/react-core-components": "3.0.2-shell4-bdb351c",
-    "@tanstack/react-router": "^1.130.2",
-    "@tanstack/react-router-devtools": "^1.130.2",
-    "@tanstack/router-plugin": "^1.121.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@tanstack/react-router": "^1.170.46",
+    "@tanstack/react-router-devtools": "^1.167.3",
+    "@tanstack/router-plugin": "^1.169.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@types/node": "24.1.0",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/react": "^16.2.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^5.2.0",
-    "esbuild": "^0.28.0",
-    "jsdom": "^26.0.0",
-    "typescript": "^5.7.2",
-    "vite": "^8.0.16",
-    "vitest": "^3.0.5",
-    "web-vitals": "^4.2.4"
+    "@types/node": "26.6.6",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^31.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0",
+    "web-vitals": "^6.2.3"
   }
 }

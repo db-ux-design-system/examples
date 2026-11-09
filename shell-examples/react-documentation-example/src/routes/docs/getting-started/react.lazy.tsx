@@ -1,11 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import {
-  DOCS_GETTING_STARTED_REACT_PATH,
-  DOCS_PATH,
-} from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(DOCS_GETTING_STARTED_REACT_PATH)({
+export const Route = createLazyFileRoute("/docs/getting-started/react")({
   component: () => (
     <DBSection width="medium">
       <h1>React</h1>

@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { API_CLIENT_API_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(API_CLIENT_API_PATH)({
+export const Route = createLazyFileRoute("/api/client-api")({
   component: () => (
     <DBSection width="medium">
       <h1>ClientApi</h1>
