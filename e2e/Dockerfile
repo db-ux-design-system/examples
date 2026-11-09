@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.50.1 as playwright
+FROM mcr.microsoft.com/playwright:v1.65.0 as playwright
 
 COPY e2e /e2e
 COPY build/ build/
