@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { DATA_BUDGET_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(DATA_BUDGET_PATH)({
+export const Route = createLazyFileRoute("/data/budget")({
   component: () => (
     <DBSection>
       <h1>Buget</h1>

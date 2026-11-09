@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { USERS_ADMIN_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(USERS_ADMIN_PATH)({
+export const Route = createLazyFileRoute("/users/admin")({
   component: () => (
     <DBSection>
       <h1>Admin</h1>

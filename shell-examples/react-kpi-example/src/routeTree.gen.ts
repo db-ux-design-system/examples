@@ -13,25 +13,18 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRouteImport } from './routes/__root'
 
 const IndexLazyRouteImport = createFileRoute('/')()
-const TimetableIndexLazyRouteImport = createFileRoute('/timetable/')()
 const CalendarIndexLazyRouteImport = createFileRoute('/calendar/')()
-const TimetableQ4LazyRouteImport = createFileRoute('/timetable/q4')()
-const TimetableQ3LazyRouteImport = createFileRoute('/timetable/q3')()
-const TimetableQ2LazyRouteImport = createFileRoute('/timetable/q2')()
+const TimetableIndexLazyRouteImport = createFileRoute('/timetable/')()
 const TimetableQ1LazyRouteImport = createFileRoute('/timetable/q1')()
+const TimetableQ2LazyRouteImport = createFileRoute('/timetable/q2')()
+const TimetableQ3LazyRouteImport = createFileRoute('/timetable/q3')()
+const TimetableQ4LazyRouteImport = createFileRoute('/timetable/q4')()
 
 const IndexLazyRoute = IndexLazyRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
-const TimetableIndexLazyRoute = TimetableIndexLazyRouteImport.update({
-  id: '/timetable/',
-  path: '/timetable/',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() =>
-  import('./routes/timetable/index.lazy').then((d) => d.Route),
-)
 const CalendarIndexLazyRoute = CalendarIndexLazyRouteImport.update({
   id: '/calendar/',
   path: '/calendar/',
@@ -39,26 +32,33 @@ const CalendarIndexLazyRoute = CalendarIndexLazyRouteImport.update({
 } as any).lazy(() =>
   import('./routes/calendar/index.lazy').then((d) => d.Route),
 )
-const TimetableQ4LazyRoute = TimetableQ4LazyRouteImport.update({
-  id: '/timetable/q4',
-  path: '/timetable/q4',
+const TimetableIndexLazyRoute = TimetableIndexLazyRouteImport.update({
+  id: '/timetable/',
+  path: '/timetable/',
   getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/timetable/q4.lazy').then((d) => d.Route))
-const TimetableQ3LazyRoute = TimetableQ3LazyRouteImport.update({
-  id: '/timetable/q3',
-  path: '/timetable/q3',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/timetable/q3.lazy').then((d) => d.Route))
-const TimetableQ2LazyRoute = TimetableQ2LazyRouteImport.update({
-  id: '/timetable/q2',
-  path: '/timetable/q2',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/timetable/q2.lazy').then((d) => d.Route))
+} as any).lazy(() =>
+  import('./routes/timetable/index.lazy').then((d) => d.Route),
+)
 const TimetableQ1LazyRoute = TimetableQ1LazyRouteImport.update({
   id: '/timetable/q1',
   path: '/timetable/q1',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/timetable/q1.lazy').then((d) => d.Route))
+const TimetableQ2LazyRoute = TimetableQ2LazyRouteImport.update({
+  id: '/timetable/q2',
+  path: '/timetable/q2',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/timetable/q2.lazy').then((d) => d.Route))
+const TimetableQ3LazyRoute = TimetableQ3LazyRouteImport.update({
+  id: '/timetable/q3',
+  path: '/timetable/q3',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/timetable/q3.lazy').then((d) => d.Route))
+const TimetableQ4LazyRoute = TimetableQ4LazyRouteImport.update({
+  id: '/timetable/q4',
+  path: '/timetable/q4',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/timetable/q4.lazy').then((d) => d.Route))
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
@@ -66,8 +66,8 @@ export interface FileRoutesByFullPath {
   '/timetable/q2': typeof TimetableQ2LazyRoute
   '/timetable/q3': typeof TimetableQ3LazyRoute
   '/timetable/q4': typeof TimetableQ4LazyRoute
-  '/calendar': typeof CalendarIndexLazyRoute
-  '/timetable': typeof TimetableIndexLazyRoute
+  '/calendar/': typeof CalendarIndexLazyRoute
+  '/timetable/': typeof TimetableIndexLazyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
@@ -96,8 +96,8 @@ export interface FileRouteTypes {
     | '/timetable/q2'
     | '/timetable/q3'
     | '/timetable/q4'
-    | '/calendar'
-    | '/timetable'
+    | '/calendar/'
+    | '/timetable/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -137,32 +137,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/timetable/': {
-      id: '/timetable/'
-      path: '/timetable'
-      fullPath: '/timetable'
-      preLoaderRoute: typeof TimetableIndexLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/calendar/': {
       id: '/calendar/'
       path: '/calendar'
-      fullPath: '/calendar'
+      fullPath: '/calendar/'
       preLoaderRoute: typeof CalendarIndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/timetable/q4': {
-      id: '/timetable/q4'
-      path: '/timetable/q4'
-      fullPath: '/timetable/q4'
-      preLoaderRoute: typeof TimetableQ4LazyRouteImport
+    '/timetable/': {
+      id: '/timetable/'
+      path: '/timetable'
+      fullPath: '/timetable/'
+      preLoaderRoute: typeof TimetableIndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/timetable/q3': {
-      id: '/timetable/q3'
-      path: '/timetable/q3'
-      fullPath: '/timetable/q3'
-      preLoaderRoute: typeof TimetableQ3LazyRouteImport
+    '/timetable/q1': {
+      id: '/timetable/q1'
+      path: '/timetable/q1'
+      fullPath: '/timetable/q1'
+      preLoaderRoute: typeof TimetableQ1LazyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/timetable/q2': {
@@ -172,11 +165,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TimetableQ2LazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/timetable/q1': {
-      id: '/timetable/q1'
-      path: '/timetable/q1'
-      fullPath: '/timetable/q1'
-      preLoaderRoute: typeof TimetableQ1LazyRouteImport
+    '/timetable/q3': {
+      id: '/timetable/q3'
+      path: '/timetable/q3'
+      fullPath: '/timetable/q3'
+      preLoaderRoute: typeof TimetableQ3LazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/timetable/q4': {
+      id: '/timetable/q4'
+      path: '/timetable/q4'
+      fullPath: '/timetable/q4'
+      preLoaderRoute: typeof TimetableQ4LazyRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

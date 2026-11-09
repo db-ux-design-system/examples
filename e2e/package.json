@@ -15,7 +15,7 @@
     "test": "npx playwright test -c playwright.config.ts"
   },
   "devDependencies": {
-    "@playwright/test": "1.50.1",
+    "@playwright/test": "1.65.0",
     "http-server": "14.1.1"
   }
 }

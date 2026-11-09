@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { USERS_VIEWER_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(USERS_VIEWER_PATH)({
+export const Route = createLazyFileRoute("/users/viewer")({
   component: () => (
     <DBSection>
       <h1>Viewers</h1>

@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { HELP_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(HELP_PATH)({
+export const Route = createLazyFileRoute("/help/")({
   component: () => (
     <DBSection>
       <h1>Help</h1>

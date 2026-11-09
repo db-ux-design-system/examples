@@ -1,8 +1,7 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { TIMETABLE_Q3_PATH } from "@/routes/__navigation.tsx";
 import { DBSection } from "@db-ux/react-core-components";
 
-export const Route = createLazyFileRoute(TIMETABLE_Q3_PATH)({
+export const Route = createLazyFileRoute("/timetable/q3")({
   component: () => (
     <DBSection width="medium">
       <h1>Q3 {new Date().getFullYear()}</h1>

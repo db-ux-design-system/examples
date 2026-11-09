@@ -13,22 +13,22 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRouteImport } from './routes/__root'
 
 const IndexLazyRouteImport = createFileRoute('/')()
-const DocsIndexLazyRouteImport = createFileRoute('/docs/')()
-const BlogIndexLazyRouteImport = createFileRoute('/blog/')()
 const ApiIndexLazyRouteImport = createFileRoute('/api/')()
 const ApiClientApiLazyRouteImport = createFileRoute('/api/client-api')()
-const DocsGettingStartedVueLazyRouteImport = createFileRoute(
-  '/docs/getting-started/vue',
+const BlogIndexLazyRouteImport = createFileRoute('/blog/')()
+const DocsIndexLazyRouteImport = createFileRoute('/docs/')()
+const ApiPluginsContentLazyRouteImport = createFileRoute(
+  '/api/plugins/content',
+)()
+const ApiPluginsLinksLazyRouteImport = createFileRoute('/api/plugins/links')()
+const DocsGettingStartedAngularLazyRouteImport = createFileRoute(
+  '/docs/getting-started/angular',
 )()
 const DocsGettingStartedReactLazyRouteImport = createFileRoute(
   '/docs/getting-started/react',
 )()
-const DocsGettingStartedAngularLazyRouteImport = createFileRoute(
-  '/docs/getting-started/angular',
-)()
-const ApiPluginsLinksLazyRouteImport = createFileRoute('/api/plugins/links')()
-const ApiPluginsContentLazyRouteImport = createFileRoute(
-  '/api/plugins/content',
+const DocsGettingStartedVueLazyRouteImport = createFileRoute(
+  '/docs/getting-started/vue',
 )()
 
 const IndexLazyRoute = IndexLazyRouteImport.update({
@@ -36,16 +36,6 @@ const IndexLazyRoute = IndexLazyRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
-const DocsIndexLazyRoute = DocsIndexLazyRouteImport.update({
-  id: '/docs/',
-  path: '/docs/',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/docs/index.lazy').then((d) => d.Route))
-const BlogIndexLazyRoute = BlogIndexLazyRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/blog/index.lazy').then((d) => d.Route))
 const ApiIndexLazyRoute = ApiIndexLazyRouteImport.update({
   id: '/api/',
   path: '/api/',
@@ -58,13 +48,37 @@ const ApiClientApiLazyRoute = ApiClientApiLazyRouteImport.update({
 } as any).lazy(() =>
   import('./routes/api/client-api.lazy').then((d) => d.Route),
 )
-const DocsGettingStartedVueLazyRoute =
-  DocsGettingStartedVueLazyRouteImport.update({
-    id: '/docs/getting-started/vue',
-    path: '/docs/getting-started/vue',
+const BlogIndexLazyRoute = BlogIndexLazyRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/blog/index.lazy').then((d) => d.Route))
+const DocsIndexLazyRoute = DocsIndexLazyRouteImport.update({
+  id: '/docs/',
+  path: '/docs/',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/docs/index.lazy').then((d) => d.Route))
+const ApiPluginsContentLazyRoute = ApiPluginsContentLazyRouteImport.update({
+  id: '/api/plugins/content',
+  path: '/api/plugins/content',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() =>
+  import('./routes/api/plugins/content.lazy').then((d) => d.Route),
+)
+const ApiPluginsLinksLazyRoute = ApiPluginsLinksLazyRouteImport.update({
+  id: '/api/plugins/links',
+  path: '/api/plugins/links',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() =>
+  import('./routes/api/plugins/links.lazy').then((d) => d.Route),
+)
+const DocsGettingStartedAngularLazyRoute =
+  DocsGettingStartedAngularLazyRouteImport.update({
+    id: '/docs/getting-started/angular',
+    path: '/docs/getting-started/angular',
     getParentRoute: () => rootRouteImport,
   } as any).lazy(() =>
-    import('./routes/docs/getting-started/vue.lazy').then((d) => d.Route),
+    import('./routes/docs/getting-started/angular.lazy').then((d) => d.Route),
   )
 const DocsGettingStartedReactLazyRoute =
   DocsGettingStartedReactLazyRouteImport.update({
@@ -74,35 +88,21 @@ const DocsGettingStartedReactLazyRoute =
   } as any).lazy(() =>
     import('./routes/docs/getting-started/react.lazy').then((d) => d.Route),
   )
-const DocsGettingStartedAngularLazyRoute =
-  DocsGettingStartedAngularLazyRouteImport.update({
-    id: '/docs/getting-started/angular',
-    path: '/docs/getting-started/angular',
+const DocsGettingStartedVueLazyRoute =
+  DocsGettingStartedVueLazyRouteImport.update({
+    id: '/docs/getting-started/vue',
+    path: '/docs/getting-started/vue',
     getParentRoute: () => rootRouteImport,
   } as any).lazy(() =>
-    import('./routes/docs/getting-started/angular.lazy').then((d) => d.Route),
+    import('./routes/docs/getting-started/vue.lazy').then((d) => d.Route),
   )
-const ApiPluginsLinksLazyRoute = ApiPluginsLinksLazyRouteImport.update({
-  id: '/api/plugins/links',
-  path: '/api/plugins/links',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() =>
-  import('./routes/api/plugins/links.lazy').then((d) => d.Route),
-)
-const ApiPluginsContentLazyRoute = ApiPluginsContentLazyRouteImport.update({
-  id: '/api/plugins/content',
-  path: '/api/plugins/content',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() =>
-  import('./routes/api/plugins/content.lazy').then((d) => d.Route),
-)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
   '/api/client-api': typeof ApiClientApiLazyRoute
-  '/api': typeof ApiIndexLazyRoute
-  '/blog': typeof BlogIndexLazyRoute
-  '/docs': typeof DocsIndexLazyRoute
+  '/api/': typeof ApiIndexLazyRoute
+  '/blog/': typeof BlogIndexLazyRoute
+  '/docs/': typeof DocsIndexLazyRoute
   '/api/plugins/content': typeof ApiPluginsContentLazyRoute
   '/api/plugins/links': typeof ApiPluginsLinksLazyRoute
   '/docs/getting-started/angular': typeof DocsGettingStartedAngularLazyRoute
@@ -139,9 +139,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/api/client-api'
-    | '/api'
-    | '/blog'
-    | '/docs'
+    | '/api/'
+    | '/blog/'
+    | '/docs/'
     | '/api/plugins/content'
     | '/api/plugins/links'
     | '/docs/getting-started/angular'
@@ -195,24 +195,10 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/docs/': {
-      id: '/docs/'
-      path: '/docs'
-      fullPath: '/docs'
-      preLoaderRoute: typeof DocsIndexLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogIndexLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/api/': {
       id: '/api/'
       path: '/api'
-      fullPath: '/api'
+      fullPath: '/api/'
       preLoaderRoute: typeof ApiIndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -223,25 +209,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiClientApiLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/docs/getting-started/vue': {
-      id: '/docs/getting-started/vue'
-      path: '/docs/getting-started/vue'
-      fullPath: '/docs/getting-started/vue'
-      preLoaderRoute: typeof DocsGettingStartedVueLazyRouteImport
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/docs/getting-started/react': {
-      id: '/docs/getting-started/react'
-      path: '/docs/getting-started/react'
-      fullPath: '/docs/getting-started/react'
-      preLoaderRoute: typeof DocsGettingStartedReactLazyRouteImport
+    '/docs/': {
+      id: '/docs/'
+      path: '/docs'
+      fullPath: '/docs/'
+      preLoaderRoute: typeof DocsIndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/docs/getting-started/angular': {
-      id: '/docs/getting-started/angular'
-      path: '/docs/getting-started/angular'
-      fullPath: '/docs/getting-started/angular'
-      preLoaderRoute: typeof DocsGettingStartedAngularLazyRouteImport
+    '/api/plugins/content': {
+      id: '/api/plugins/content'
+      path: '/api/plugins/content'
+      fullPath: '/api/plugins/content'
+      preLoaderRoute: typeof ApiPluginsContentLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/plugins/links': {
@@ -251,11 +237,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPluginsLinksLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/plugins/content': {
-      id: '/api/plugins/content'
-      path: '/api/plugins/content'
-      fullPath: '/api/plugins/content'
-      preLoaderRoute: typeof ApiPluginsContentLazyRouteImport
+    '/docs/getting-started/angular': {
+      id: '/docs/getting-started/angular'
+      path: '/docs/getting-started/angular'
+      fullPath: '/docs/getting-started/angular'
+      preLoaderRoute: typeof DocsGettingStartedAngularLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/getting-started/react': {
+      id: '/docs/getting-started/react'
+      path: '/docs/getting-started/react'
+      fullPath: '/docs/getting-started/react'
+      preLoaderRoute: typeof DocsGettingStartedReactLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/getting-started/vue': {
+      id: '/docs/getting-started/vue'
+      path: '/docs/getting-started/vue'
+      fullPath: '/docs/getting-started/vue'
+      preLoaderRoute: typeof DocsGettingStartedVueLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

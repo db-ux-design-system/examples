@@ -13,48 +13,48 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRouteImport } from './routes/__root'
 
 const IndexLazyRouteImport = createFileRoute('/')()
-const HelpIndexLazyRouteImport = createFileRoute('/help/')()
-const UsersViewerLazyRouteImport = createFileRoute('/users/viewer')()
-const UsersEditorLazyRouteImport = createFileRoute('/users/editor')()
-const UsersAdminLazyRouteImport = createFileRoute('/users/admin')()
-const DataIncomeLazyRouteImport = createFileRoute('/data/income')()
 const DataBudgetLazyRouteImport = createFileRoute('/data/budget')()
+const DataIncomeLazyRouteImport = createFileRoute('/data/income')()
+const HelpIndexLazyRouteImport = createFileRoute('/help/')()
+const UsersAdminLazyRouteImport = createFileRoute('/users/admin')()
+const UsersEditorLazyRouteImport = createFileRoute('/users/editor')()
+const UsersViewerLazyRouteImport = createFileRoute('/users/viewer')()
 
 const IndexLazyRoute = IndexLazyRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
-const HelpIndexLazyRoute = HelpIndexLazyRouteImport.update({
-  id: '/help/',
-  path: '/help/',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/help/index.lazy').then((d) => d.Route))
-const UsersViewerLazyRoute = UsersViewerLazyRouteImport.update({
-  id: '/users/viewer',
-  path: '/users/viewer',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/users/viewer.lazy').then((d) => d.Route))
-const UsersEditorLazyRoute = UsersEditorLazyRouteImport.update({
-  id: '/users/editor',
-  path: '/users/editor',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/users/editor.lazy').then((d) => d.Route))
-const UsersAdminLazyRoute = UsersAdminLazyRouteImport.update({
-  id: '/users/admin',
-  path: '/users/admin',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/users/admin.lazy').then((d) => d.Route))
-const DataIncomeLazyRoute = DataIncomeLazyRouteImport.update({
-  id: '/data/income',
-  path: '/data/income',
-  getParentRoute: () => rootRouteImport,
-} as any).lazy(() => import('./routes/data/income.lazy').then((d) => d.Route))
 const DataBudgetLazyRoute = DataBudgetLazyRouteImport.update({
   id: '/data/budget',
   path: '/data/budget',
   getParentRoute: () => rootRouteImport,
 } as any).lazy(() => import('./routes/data/budget.lazy').then((d) => d.Route))
+const DataIncomeLazyRoute = DataIncomeLazyRouteImport.update({
+  id: '/data/income',
+  path: '/data/income',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/data/income.lazy').then((d) => d.Route))
+const HelpIndexLazyRoute = HelpIndexLazyRouteImport.update({
+  id: '/help/',
+  path: '/help/',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/help/index.lazy').then((d) => d.Route))
+const UsersAdminLazyRoute = UsersAdminLazyRouteImport.update({
+  id: '/users/admin',
+  path: '/users/admin',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/users/admin.lazy').then((d) => d.Route))
+const UsersEditorLazyRoute = UsersEditorLazyRouteImport.update({
+  id: '/users/editor',
+  path: '/users/editor',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/users/editor.lazy').then((d) => d.Route))
+const UsersViewerLazyRoute = UsersViewerLazyRouteImport.update({
+  id: '/users/viewer',
+  path: '/users/viewer',
+  getParentRoute: () => rootRouteImport,
+} as any).lazy(() => import('./routes/users/viewer.lazy').then((d) => d.Route))
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
@@ -63,7 +63,7 @@ export interface FileRoutesByFullPath {
   '/users/admin': typeof UsersAdminLazyRoute
   '/users/editor': typeof UsersEditorLazyRoute
   '/users/viewer': typeof UsersViewerLazyRoute
-  '/help': typeof HelpIndexLazyRoute
+  '/help/': typeof HelpIndexLazyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
@@ -93,7 +93,7 @@ export interface FileRouteTypes {
     | '/users/admin'
     | '/users/editor'
     | '/users/viewer'
-    | '/help'
+    | '/help/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -133,32 +133,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/help/': {
-      id: '/help/'
-      path: '/help'
-      fullPath: '/help'
-      preLoaderRoute: typeof HelpIndexLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/users/viewer': {
-      id: '/users/viewer'
-      path: '/users/viewer'
-      fullPath: '/users/viewer'
-      preLoaderRoute: typeof UsersViewerLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/users/editor': {
-      id: '/users/editor'
-      path: '/users/editor'
-      fullPath: '/users/editor'
-      preLoaderRoute: typeof UsersEditorLazyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/users/admin': {
-      id: '/users/admin'
-      path: '/users/admin'
-      fullPath: '/users/admin'
-      preLoaderRoute: typeof UsersAdminLazyRouteImport
+    '/data/budget': {
+      id: '/data/budget'
+      path: '/data/budget'
+      fullPath: '/data/budget'
+      preLoaderRoute: typeof DataBudgetLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/data/income': {
@@ -168,11 +147,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DataIncomeLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/data/budget': {
-      id: '/data/budget'
-      path: '/data/budget'
-      fullPath: '/data/budget'
-      preLoaderRoute: typeof DataBudgetLazyRouteImport
+    '/help/': {
+      id: '/help/'
+      path: '/help'
+      fullPath: '/help/'
+      preLoaderRoute: typeof HelpIndexLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/users/admin': {
+      id: '/users/admin'
+      path: '/users/admin'
+      fullPath: '/users/admin'
+      preLoaderRoute: typeof UsersAdminLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/users/editor': {
+      id: '/users/editor'
+      path: '/users/editor'
+      fullPath: '/users/editor'
+      preLoaderRoute: typeof UsersEditorLazyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/users/viewer': {
+      id: '/users/viewer'
+      path: '/users/viewer'
+      fullPath: '/users/viewer'
+      preLoaderRoute: typeof UsersViewerLazyRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
