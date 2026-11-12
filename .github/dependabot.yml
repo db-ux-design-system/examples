@@ -24,6 +24,10 @@ updates:
     versioning-strategy: increase
     cooldown:
       default-days: 3
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       patch-dependencies:
         update-types:
@@ -53,6 +57,10 @@ updates:
     versioning-strategy: increase
     cooldown:
       default-days: 3
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       patch-dependencies:
         update-types:
@@ -75,6 +83,10 @@ updates:
     versioning-strategy: increase
     cooldown:
       default-days: 3
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       patch-dependencies:
         update-types:
@@ -97,6 +109,10 @@ updates:
     versioning-strategy: increase
     cooldown:
       default-days: 3
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
       patch-dependencies:
         update-types:
